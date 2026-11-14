@@ -4,7 +4,7 @@ Primeiro trecho da escola: jardim, recepção e uma sala. Trabalho local, em Typ
 
 - `docs/PLANO-CANONICO-INTEGRAL.md`: cópia integral do plano selecionado pelo usuário.
 - `PLANO-CONGELADO.md`: complemento operacional, decisões e metas.
-- `AGENTS.md`: regra máxima de segurança do Mac.
+- [AGENTS.md](AGENTS.md) reúne a regra máxima de segurança do Mac e o fluxo obrigatório de branches e merges.
 - `docs/CENARIO-V1.md`: plano de ação do cenário.
 - `docs/SEGURANCA-DEPENDENCIAS.md`: avaliação da instalação e da prévia local.
 - `docs/AUDITORIA-RETOMADA.md`: auditoria, resultados no navegador e pendências. `docs/VALIDACAO-INICIAL.md` registra a etapa anterior à instalação.
