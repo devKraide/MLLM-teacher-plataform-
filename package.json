@@ -1,0 +1,17 @@
+{
+  "name": "escola-cenario-v1",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Primeiro trecho local da escola virtual: jardim, recepção e sala.",
+  "engines": { "node": ">=22.18.0" },
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "node --experimental-strip-types --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "preview": "node scripts/preview.mjs"
+  },
+  "dependencies": { "phaser": "3.90.0" },
+  "devDependencies": { "typescript": "5.9.3" },
+  "overrides": { "eventemitter3": "5.0.1" }
+}

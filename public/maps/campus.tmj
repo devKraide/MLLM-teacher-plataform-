@@ -1,0 +1,590 @@
+{
+  "type": "map",
+  "version": "1.10",
+  "tiledversion": "1.11.2",
+  "orientation": "orthogonal",
+  "renderorder": "right-down",
+  "infinite": false,
+  "width": 48,
+  "height": 32,
+  "tilewidth": 32,
+  "tileheight": 32,
+  "nextlayerid": 5,
+  "nextobjectid": 200,
+  "tilesets": [],
+  "layers": [
+    {
+      "id": 1,
+      "name": "campus-art",
+      "type": "imagelayer",
+      "image": "../assets/campus-v1.png",
+      "x": 0,
+      "y": 0,
+      "offsetx": 0,
+      "offsety": 0,
+      "opacity": 1,
+      "visible": true
+    },
+    {
+      "id": 2,
+      "name": "collisions",
+      "type": "objectgroup",
+      "objects": [
+        {
+          "id": 1,
+          "name": "north",
+          "type": "obstacle",
+          "x": 244,
+          "y": 60,
+          "width": 1080,
+          "height": 142,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 2,
+          "name": "west",
+          "type": "obstacle",
+          "x": 242,
+          "y": 120,
+          "width": 84,
+          "height": 407,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 3,
+          "name": "east",
+          "type": "obstacle",
+          "x": 1302,
+          "y": 120,
+          "width": 54,
+          "height": 407,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 4,
+          "name": "front-west",
+          "type": "obstacle",
+          "x": 300,
+          "y": 437,
+          "width": 178,
+          "height": 90,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 5,
+          "name": "front-center",
+          "type": "obstacle",
+          "x": 574,
+          "y": 437,
+          "width": 411,
+          "height": 90,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 6,
+          "name": "front-east",
+          "type": "obstacle",
+          "x": 1092,
+          "y": 437,
+          "width": 230,
+          "height": 90,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 7,
+          "name": "division-north",
+          "type": "obstacle",
+          "x": 758,
+          "y": 100,
+          "width": 32,
+          "height": 159,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 8,
+          "name": "division-south",
+          "type": "obstacle",
+          "x": 758,
+          "y": 330,
+          "width": 32,
+          "height": 119,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 9,
+          "name": "welcome-desk",
+          "type": "obstacle",
+          "x": 456,
+          "y": 195,
+          "width": 195,
+          "height": 76,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 10,
+          "name": "sofa-west",
+          "type": "obstacle",
+          "x": 404,
+          "y": 305,
+          "width": 66,
+          "height": 105,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 11,
+          "name": "sofa-east",
+          "type": "obstacle",
+          "x": 601,
+          "y": 305,
+          "width": 63,
+          "height": 105,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 12,
+          "name": "lounge-table",
+          "type": "obstacle",
+          "x": 496,
+          "y": 333,
+          "width": 77,
+          "height": 59,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 13,
+          "name": "reception-planter",
+          "type": "obstacle",
+          "x": 694,
+          "y": 337,
+          "width": 59,
+          "height": 88,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 14,
+          "name": "teacher-desk",
+          "type": "obstacle",
+          "x": 1130,
+          "y": 198,
+          "width": 115,
+          "height": 44,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 15,
+          "name": "class-plant",
+          "type": "obstacle",
+          "x": 1250,
+          "y": 271,
+          "width": 49,
+          "height": 67,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 16,
+          "name": "class-flowers",
+          "type": "obstacle",
+          "x": 1228,
+          "y": 383,
+          "width": 71,
+          "height": 53,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 17,
+          "name": "pond",
+          "type": "obstacle",
+          "x": 183,
+          "y": 708,
+          "width": 315,
+          "height": 167,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 18,
+          "name": "pond-tree",
+          "type": "obstacle",
+          "x": 153,
+          "y": 607,
+          "width": 157,
+          "height": 133,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 19,
+          "name": "garden-island-left",
+          "type": "obstacle",
+          "x": 544,
+          "y": 638,
+          "width": 144,
+          "height": 100,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 20,
+          "name": "garden-island-right",
+          "type": "obstacle",
+          "x": 835,
+          "y": 633,
+          "width": 131,
+          "height": 92,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 21,
+          "name": "garden-flower-right",
+          "type": "obstacle",
+          "x": 1148,
+          "y": 630,
+          "width": 72,
+          "height": 80,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 22,
+          "name": "bench-nw",
+          "type": "obstacle",
+          "x": 389,
+          "y": 653,
+          "width": 82,
+          "height": 44,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 23,
+          "name": "bench-ne",
+          "type": "obstacle",
+          "x": 1060,
+          "y": 678,
+          "width": 86,
+          "height": 49,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 24,
+          "name": "bench-sw",
+          "type": "obstacle",
+          "x": 496,
+          "y": 864,
+          "width": 87,
+          "height": 44,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 25,
+          "name": "bench-se",
+          "type": "obstacle",
+          "x": 955,
+          "y": 864,
+          "width": 89,
+          "height": 44,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 26,
+          "name": "tree-sw",
+          "type": "obstacle",
+          "x": 537,
+          "y": 769,
+          "width": 93,
+          "height": 80,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 27,
+          "name": "tree-se",
+          "type": "obstacle",
+          "x": 933,
+          "y": 755,
+          "width": 106,
+          "height": 91,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 28,
+          "name": "outer-west",
+          "type": "obstacle",
+          "x": 0,
+          "y": 550,
+          "width": 100,
+          "height": 474,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 29,
+          "name": "outer-east",
+          "type": "obstacle",
+          "x": 1390,
+          "y": 550,
+          "width": 146,
+          "height": 474,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 30,
+          "name": "desk-880-250",
+          "type": "obstacle",
+          "x": 880,
+          "y": 250,
+          "width": 70,
+          "height": 65,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 31,
+          "name": "desk-880-338",
+          "type": "obstacle",
+          "x": 880,
+          "y": 338,
+          "width": 70,
+          "height": 65,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 32,
+          "name": "desk-1008-250",
+          "type": "obstacle",
+          "x": 1008,
+          "y": 250,
+          "width": 70,
+          "height": 65,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 33,
+          "name": "desk-1008-338",
+          "type": "obstacle",
+          "x": 1008,
+          "y": 338,
+          "width": 70,
+          "height": 65,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 34,
+          "name": "desk-1136-250",
+          "type": "obstacle",
+          "x": 1136,
+          "y": 250,
+          "width": 70,
+          "height": 65,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 35,
+          "name": "desk-1136-338",
+          "type": "obstacle",
+          "x": 1136,
+          "y": 338,
+          "width": 70,
+          "height": 65,
+          "rotation": 0,
+          "visible": true
+        }
+      ],
+      "opacity": 1,
+      "visible": false
+    },
+    {
+      "id": 3,
+      "name": "regions",
+      "type": "objectgroup",
+      "objects": [
+        {
+          "id": 36,
+          "name": "garden",
+          "type": "region",
+          "x": 100,
+          "y": 530,
+          "width": 1290,
+          "height": 494,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Jardim central"
+            },
+            {
+              "name": "caption",
+              "type": "string",
+              "value": "Um respiro entre descobertas."
+            }
+          ]
+        },
+        {
+          "id": 37,
+          "name": "reception",
+          "type": "region",
+          "x": 326,
+          "y": 200,
+          "width": 432,
+          "height": 237,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Recepção"
+            },
+            {
+              "name": "caption",
+              "type": "string",
+              "value": "Seu ponto de partida."
+            }
+          ]
+        },
+        {
+          "id": 38,
+          "name": "classroom",
+          "type": "region",
+          "x": 790,
+          "y": 200,
+          "width": 512,
+          "height": 237,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "label",
+              "type": "string",
+              "value": "Sala de idiomas"
+            },
+            {
+              "name": "caption",
+              "type": "string",
+              "value": "Espaço para aprender em companhia."
+            }
+          ]
+        }
+      ],
+      "opacity": 1,
+      "visible": false
+    },
+    {
+      "id": 4,
+      "name": "points",
+      "type": "objectgroup",
+      "objects": [
+        {
+          "id": 39,
+          "name": "start",
+          "type": "spawn",
+          "x": 767,
+          "y": 928,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true
+        },
+        {
+          "id": 40,
+          "name": "welcome",
+          "type": "interaction",
+          "x": 550,
+          "y": 289,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "title",
+              "type": "string",
+              "value": "Bem-vindo à escola"
+            },
+            {
+              "name": "body",
+              "type": "string",
+              "value": "Este é o primeiro trecho do campus. Explore o jardim, a recepção e a sala de idiomas. Os professores e as aulas chegam em uma próxima etapa."
+            }
+          ]
+        },
+        {
+          "id": 41,
+          "name": "board",
+          "type": "interaction",
+          "x": 1040,
+          "y": 221,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "title",
+              "type": "string",
+              "value": "Sala de idiomas"
+            },
+            {
+              "name": "body",
+              "type": "string",
+              "value": "Seis lugares, uma conversa compartilhada. Este ambiente está reservado para as futuras aulas em grupo. Nesta versão, você pode explorar o espaço."
+            }
+          ]
+        },
+        {
+          "id": 42,
+          "name": "garden-bench",
+          "type": "interaction",
+          "x": 1004,
+          "y": 927,
+          "width": 0,
+          "height": 0,
+          "rotation": 0,
+          "visible": true,
+          "properties": [
+            {
+              "name": "title",
+              "type": "string",
+              "value": "Uma pausa no jardim"
+            },
+            {
+              "name": "body",
+              "type": "string",
+              "value": "A escola também terá espaço para encontros e pausas entre as aulas. Por enquanto, aproveite para conhecer o cenário."
+            }
+          ]
+        }
+      ],
+      "opacity": 1,
+      "visible": false
+    }
+  ]
+}
