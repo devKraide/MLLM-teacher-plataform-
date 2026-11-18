@@ -1,9 +1,8 @@
 import type Phaser from 'phaser';
 import { CampusScene, element } from './scene.ts';
 import { collides } from './core/navigation.ts';
-import { footRadius, vectors, Walker } from './core/steps.ts';
+import { footRadius, studentFrame, vectors, Walker } from './core/steps.ts';
 import type { Direction } from './core/steps.ts';
-import { makeWalkerArt } from './modular-art.ts';
 import type { MapObject } from './map.ts';
 
 export class ModularScene extends CampusScene {
@@ -19,10 +18,12 @@ export class ModularScene extends CampusScene {
   preload(): void {
     this.load.image('modular-tiles', './assets/modular-tiles.png');
     this.load.tilemapTiledJSON('reception', './maps/reception.tmj');
+    // B-01 student: 5 columns (idle, walk 0-3) × 4 rows in `directions` order.
+    this.load.spritesheet('student-main', './assets/characters/student-main/student-main.png', { frameWidth: 32, frameHeight: 40 });
   }
 
   protected buildWorld(): boolean {
-    if (!this.cache.tilemap.exists('reception') || !this.textures.exists('modular-tiles')) {
+    if (!this.cache.tilemap.exists('reception') || !this.textures.exists('modular-tiles') || !this.textures.exists('student-main')) {
       element('notice').textContent = 'Não foi possível carregar o trecho modular.';
       return false;
     }
@@ -50,8 +51,10 @@ export class ModularScene extends CampusScene {
     for (const obj of physicalObjects) this.drawObject(obj);
     this.drawDoor();
     const { x, y } = this.position;
-    this.shadow = this.add.ellipse(x, y, 12, 5, 0x123c35, .35);
-    this.player = this.add.image(x, y, makeWalkerArt(this.textures), 'north-0').setOrigin(.5, 31 / 32);
+    this.shadow = this.add.ellipse(x, y, 14, 5, 0x123c35, .35);
+    this.textures.get('student-main').setFilter(window.Phaser.Textures.FilterMode.NEAREST);
+    // Feet contact pixel (16, 38) of the 32×40 frame sits on the world position.
+    this.player = this.add.image(x, y, 'student-main', studentFrame(this.walker.facing, 0)).setOrigin(.5, 38 / 40);
     this.updateDepth();
     const mode = element<HTMLButtonElement>('movement-mode');
     mode.hidden = false;
@@ -167,8 +170,7 @@ export class ModularScene extends CampusScene {
     if (this.pendingMode && !this.walker.target) this.applyMode();
     this.position = this.walker.position;
     this.traveled = distance > 0 ? (this.traveled + distance) % 28 : 0;
-    const frame = distance > 0 ? [0, 1, 0, 2][Math.floor(this.traveled / 7)] : 0;
-    this.player.setFrame(`${this.walker.facing}-${frame}`);
+    this.player.setFrame(studentFrame(this.walker.facing, distance > 0 ? this.traveled : undefined));
     this.updateDepth();
     if (!this.door.properties) this.updateDoorLabel();
   }
