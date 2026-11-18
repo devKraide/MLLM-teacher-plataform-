@@ -1,0 +1,11 @@
+{
+  "id": "student-main",
+  "version": "b01-v1",
+  "frame": { "width": 32, "height": 40 },
+  "anchor": { "x": 16, "y": 38, "originX": 0.5, "originY": 0.95 },
+  "directions": ["south", "west", "east", "north"],
+  "columns": ["idle", "walk-0", "walk-1", "walk-2", "walk-3"],
+  "walk": { "pixelsPerFrame": 7 },
+  "collision": { "footRadius": 4 },
+  "shadow": { "width": 14, "height": 5 }
+}

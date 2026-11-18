@@ -1,0 +1,71 @@
+{
+  "group_id": "8f6fa1d0-7603-46a8-afec-c7345c29dee8",
+  "states": [
+    {
+      "character": {
+        "id": "3bed325b-e56b-4c30-a0de-92d5f643d958",
+        "name": "Idle",
+        "prompt": "young adult university student, casual clean modern outfit: short open zip jacket in dark teal blue (#3D7978) with soft sage green highlights (#70A68A), ivory off-white t-shirt (#ECE6D7), dark slate blue-grey trousers (#2B3A42), light ivory sneakers, small brown leather backpack (#9B7557) on the back with straps visible, simple short dark brown hair, friendly approachable, slim proportions about 3 heads tall, full body standing straight",
+        "size": {
+          "width": 40,
+          "height": 40
+        },
+        "template_id": "mannequin",
+        "directions": 8,
+        "view": "low top-down",
+        "created_at": "2026-11-18T18:23:50.488345+00:00"
+      },
+      "folder": "Idle",
+      "frames": {
+        "rotations": {
+          "south": "Idle/rotations/south.png",
+          "south-east": "Idle/rotations/south-east.png",
+          "east": "Idle/rotations/east.png",
+          "north-east": "Idle/rotations/north-east.png",
+          "north": "Idle/rotations/north.png",
+          "north-west": "Idle/rotations/north-west.png",
+          "west": "Idle/rotations/west.png",
+          "south-west": "Idle/rotations/south-west.png"
+        },
+        "animations": {
+          "walk": {
+            "south": [
+              "Idle/animations/walk/south/frame_000.png",
+              "Idle/animations/walk/south/frame_001.png",
+              "Idle/animations/walk/south/frame_002.png",
+              "Idle/animations/walk/south/frame_003.png"
+            ]
+          },
+          "walk-skel": {
+            "south": [
+              "Idle/animations/walk-skel/south/frame_000.png",
+              "Idle/animations/walk-skel/south/frame_001.png",
+              "Idle/animations/walk-skel/south/frame_002.png",
+              "Idle/animations/walk-skel/south/frame_003.png"
+            ],
+            "north": [
+              "Idle/animations/walk-skel/north/frame_000.png",
+              "Idle/animations/walk-skel/north/frame_001.png",
+              "Idle/animations/walk-skel/north/frame_002.png",
+              "Idle/animations/walk-skel/north/frame_003.png"
+            ],
+            "west": [
+              "Idle/animations/walk-skel/west/frame_000.png",
+              "Idle/animations/walk-skel/west/frame_001.png",
+              "Idle/animations/walk-skel/west/frame_002.png",
+              "Idle/animations/walk-skel/west/frame_003.png"
+            ],
+            "east": [
+              "Idle/animations/walk-skel/east/frame_000.png",
+              "Idle/animations/walk-skel/east/frame_001.png",
+              "Idle/animations/walk-skel/east/frame_002.png",
+              "Idle/animations/walk-skel/east/frame_003.png"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "export_version": "3.1",
+  "export_date": "2026-11-18T18:34:51.742100"
+}
