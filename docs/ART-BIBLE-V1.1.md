@@ -1,5 +1,7 @@
 # CAMPUS — ART BIBLE V1.1
 
+> **Versão oficial vigente.** A-01 homologada por Nicolas Kraide em 14/11/2026. A direção artística é **AB-3 — Campus Vivo**.
+
 **Identidade visual, linguagem de mundo e critérios de produção artística**\
 **Documento:** `docs/ART-BIBLE-V1.1.md`\
 **Versão:** 1.1 — revisão de direção visual da Etapa A (A-01.2)\
@@ -182,7 +184,7 @@ Paleta inicial para prototipação e comparação. O responsável indicou que **
 
 **Controle de contraste:** testar legibilidade do avatar em gramado, caminho, interior e sombra. Texto da interface HTML/CSS deve buscar WCAG AA apropriado ao tamanho/uso; indicadores importantes precisam de redundância por forma/ícone, não apenas cor.
 
-**Material ilustrativo:** `ART-BIBLE-PALETA-V1.svg`, no acervo local da Etapa A-01. O SVG contém amostras vetoriais editáveis para comparar a paleta candidata. A renderização no jogo segue pendente de validação.
+**Material ilustrativo:** [ART-BIBLE-PALETA-V1.svg](../campus%20art-bible%20A01/assets/ART-BIBLE-PALETA-V1.svg), no acervo da Etapa A-01. O SVG contém amostras vetoriais editáveis para comparar a paleta candidata. A renderização no jogo segue pendente de validação.
 
 ## 5. Gramática espacial e escala
 

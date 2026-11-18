@@ -4,6 +4,8 @@ Primeiro trecho da escola: jardim, recepção e uma sala. Trabalho local, em Typ
 
 - `docs/PLANO-CANONICO-INTEGRAL.md`: cópia integral do plano selecionado pelo usuário.
 - `PLANO-CONGELADO.md`: complemento operacional, decisões e metas.
+- [Art Bible V1.1 oficial](docs/ART-BIBLE-V1.1.md) — AB-3 — Campus Vivo, homologada em 14/11/2026. B-01 é a próxima etapa autorizada.
+- [Histórico da Art Bible](campus%20art-bible%20A01/art-bible%20desatualizados) — V1 e revisão V1.1 anterior à homologação.
 - [AGENTS.md](AGENTS.md) reúne a regra máxima de segurança do Mac e o fluxo obrigatório de branches e merges.
 - `docs/CENARIO-V1.md`: plano de ação do cenário.
 - `docs/SEGURANCA-DEPENDENCIAS.md`: avaliação da instalação e da prévia local.
