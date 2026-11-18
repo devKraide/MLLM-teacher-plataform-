@@ -40,6 +40,14 @@ Não contornar uma restrição usando outra ferramenta. Não instalar nada nem i
 - Confira o merge no gráfico com `git log --graph --oneline --decorate main`. Depois de confirmar que a `main` local e a remota contêm os últimos commits das respectivas branches integradas, apague a branch local com `git branch -d <branch>` e a remota, quando existir, com `git push origin --delete <branch>`. O commit de merge mantém o histórico do trabalho visível mesmo depois da remoção das branches.
 - Branches abandonadas também devem ser removidas localmente e no remoto. Se houver commits exclusivos, verifique o que seria perdido e obtenha autorização explícita para preservar ou descartar esse trabalho antes da remoção. Aplique a regra de segurança acima às operações de publicação e exclusão.
 
+## Atribuição obrigatória de tarefas no Linear
+
+- Ao assumir uma tarefa no Linear, atribua-a explicitamente à pessoa ou ao agente responsável pelo trabalho usando o campo **Assignee / Assign to** antes de iniciar a execução. A regra vale para tarefas e subtarefas.
+- Consulte a tarefa e a identidade do responsável no Linear, aplique a atribuição e confira que o campo foi salvo corretamente. Para agentes, use a identidade cadastrada que corresponda ao executor. Se essa identidade estiver ausente ou ambígua, peça esclarecimento antes de atribuir a outra conta.
+- Preserve o responsável em todas as mudanças de estado, inclusive **Done**, cancelamento, arquivamento, reabertura ou bloqueio. A conclusão mantém a tarefa no nome de quem a assumiu. Ao atualizar outros campos, preserve o Assignee existente.
+- Remova ou substitua a atribuição somente quando o responsável abandonar a tarefa. Registre o abandono e, se outra pessoa assumir o trabalho, atribua a tarefa explicitamente a ela.
+- Esta regra deve ser seguida nas ações pela interface, pelas integrações e pelas automações do projeto.
+
 ## Decisões congeladas e escopo atual
 
 Ler `docs/PLANO-CANONICO-INTEGRAL.md` e `PLANO-CONGELADO.md` antes de implementar. O plano COMPLETO e a auditoria estão canonizados, não apenas a escolha de tecnologias. O primeiro arquivo preserva integralmente o plano selecionado pelo usuário; o segundo registra o foco atual e a alteração de sequência autorizada (cenário primeiro). Não alterar silenciosamente o documento integral. O trabalho ativo é a V1 do cenário; seguir `docs/CENARIO-V1.md`. Não reabrir as decisões nem expandir para voz, IA e multiplayer sem direcionamento do usuário.
