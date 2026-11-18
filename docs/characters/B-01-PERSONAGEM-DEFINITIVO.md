@@ -80,3 +80,7 @@ Nenhum crédito em dinheiro foi usado (saldo em USD: 0,00).
 5. **Idle de 1 quadro**, como na ficha (sem respiração).
 6. **Visão:** o PixelLab desenha em "low top-down" (~20°, 3/4 de RPG). Não existe opção ortográfica pura para personagem; o cenário atual aceita bem essa leitura, mas é uma diferença em relação ao pedido "top-down ortográfico".
 7. O teste em escala real dentro do jogo (zoom fracionário ~3,1×, filtro `NEAREST`) não foi feito aqui: é NIC-62/B-02.
+
+## 6. Decisão do responsável
+
+18/11/2026: o responsável decidiu **manter o sprite como está** (paleta, cor da jaqueta, proporções e visão low top-down). Não haverá redução de paleta nem nova geração nesta etapa. Segue para QA (NIC-62).
