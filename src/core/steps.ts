@@ -9,6 +9,15 @@ export const vectors: Record<Direction, Point> = {
 export const cellSize = 16;
 export const speed = 88;
 export const footRadius = 4;
+export const walkPixelsPerFrame = 7;
+const studentColumns = 5;
+
+// Spritesheet index for the B-01 student (docs/characters/B-01-FICHA-ESTUDANTE.md §4–5).
+// `traveled` is the distance walked in the current cycle; undefined means standing still.
+export function studentFrame(facing: Direction, traveled?: number): number {
+  const column = traveled === undefined ? 0 : 1 + Math.floor(traveled / walkPixelsPerFrame) % 4;
+  return directions.indexOf(facing) * studentColumns + column;
+}
 
 export class Walker {
   facing: Direction = 'north';
